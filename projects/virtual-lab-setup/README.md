@@ -23,16 +23,16 @@ The lab was successfully built with full isolation. Both machines can communicat
 
 ### Evidence
 **Kali Linux IP configuration:**
-![Kali IP address](evidence/kali%20ip.png)
+![Kali IP address](evidence/kali_ip.png)
 
 **Metasploitable 2 IP configuration:**
-![Metasploitable IP address](evidence/meta%20ip.png)
+![Metasploitable IP address](evidence/meta_ip.png)
 
 **Connectivity ping test (Kali to target):**
 ![Ping test result](evidence/ping.png)
 
 **Network topology diagram:**
-![Lab topology](evidence/Topological%20diagram.png)
+![Lab topology](evidence/Topological_diagram.png)
 
 Full network setting screenshots are stored in this `evidence/` folder.
 
