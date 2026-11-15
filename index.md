@@ -1,36 +1,64 @@
 # Cybersecurity Portfolio
 
 ## About Me
-I am Yize Han, a cybersecurity student with two years of professional experience in penetration testing, covering mobile applications, cloud platforms and in-vehicle infotainment systems. I am currently building my technical skills and working toward a career in offensive security and penetration testing. This portfolio documents my learning progress, hands-on labs and project work.
+
+I am a cybersecurity student with a background in network and information security engineering. My interest in cybersecurity began during my undergraduate studies, where I worked on wireless security experiments, network operations labs, and deepfake detection tasks. I am particularly drawn to offensive security and penetration testing, as I enjoy analysing system weaknesses and finding practical ways to improve security defences. This portfolio documents my hands-on lab work, technical skill development, and career progress as I build expertise in real-world cybersecurity testing.
 
 ## Technical Skills
-- Network scanning & enumeration: Working knowledge (Nmap)
-- Web application testing: Working knowledge (Burp Suite, DVWA)
-- Linux system administration: Working knowledge (Kali Linux)
-- Python scripting: Working knowledge
-- Mobile application security: Confident (Frida, Apktool)
-- Virtual lab setup: Confident (VMware, host-only networking)
+
+### Penetration Testing
+
+- Network scanning & enumeration: Confident (demonstrated in [Nmap Service Scan](projects/nmap-service-scan/))
+- Web application testing: Working knowledge (Burp Suite, XSS testing via DVWA practice)
+- Vulnerability assessment: Working knowledge
+- Virtual lab construction: Confident (demonstrated in [Virtual Lab Setup](projects/virtual-lab-setup/))
+
+### Core Tools
+
+- Kali Linux: Confident
+- Nmap: Confident
+- Wireshark: Working knowledge
+- Burp Suite Community Edition: Working knowledge
+- Metasploit Framework: Working knowledge
+
+### Network & Other
+
+- Switch and router configuration: Working knowledge
+- Wireless security testing: Basic knowledge
+- Machine learning for security use cases: Beginner
 
 ## Certifications and Training
-- In progress: OSCP preparation, target completion: Month 12
-- TryHackMe learning paths (ongoing)
-- WQE7001 Cyber Security course
+
+I do not currently hold formal industry certifications.
+
+### Training & Learning Paths (In Progress)
+
+- TryHackMe Pre-Security and Complete Beginner learning paths
+- Offensive Security OSCP preparation, target completion: Month 12
+- WQE7001 Cyber Security coursework, University of Malaya
+- Undergraduate coursework in network security and machine learning, Xidian University
 
 ## Projects
-- [Virtual Lab Setup](projects/virtual-lab-setup/)
-- [Nmap Service Vulnerability Scan](projects/nmap-service-scan/)
+
+- [Virtual Lab Setup](projects/virtual-lab-setup/) – A fully isolated host-only penetration testing lab built with VMware, Kali Linux and Metasploitable 2.
+- [Nmap Service Vulnerability Scan](projects/nmap-service-scan/) – Service version scanning and risk assessment of open ports on a deliberately vulnerable target machine.
 
 ## Learning Journey
-This course has given me hands-on practice with core cybersecurity tools and a clear understanding of legal and ethical boundaries. The virtual lab assignment taught me how to build an isolated testing environment safely, and the Nmap scanning exercise helped me learn how to interpret open ports and assess service risks.
 
-I ran into an issue where the two virtual machines could not ping each other at first. I diagnosed the problem by checking network adapter settings on both VMs, and fixed it by setting both interfaces to the same host-only network.
+Taking this cybersecurity course has given me structured hands-on practice and a clearer understanding of professional security workflows. Two specific lab exercises have been the most valuable so far. First, the virtual lab setup assignment taught me how to build a properly isolated testing environment. Before this, I had used virtual machines casually, but I did not fully appreciate how critical network isolation is for legal and safe testing. Learning to configure host-only networking and verify both internal connectivity and external access gave me a standardised process I can reuse for all future lab work. Second, the Nmap service scanning exercise improved my ability to translate raw scan output into meaningful risk assessments. I learned not just how to run a scan, but how to interpret version numbers, match them to known vulnerabilities, and prioritise high-risk ports such as outdated FTP and Telnet services.
 
-I still find cryptographic implementation analysis challenging, and I plan to work through structured cryptography challenges to improve. My next concrete goal is to complete the OSCP certification within 12 months, measured by finishing the full lab syllabus and passing the exam.
+I also ran into a notable problem during separate web testing practice outside of class. I could not capture traffic from a WeChat mini-program using Burp Suite, even after installing the root CA certificate and checking system proxy settings. I diagnosed the issue step by step: I verified the proxy listener was active, checked for certificate pinning, and eventually realised the mini-program was bypassing the system proxy for some requests. I resolved it by setting up a second-layer proxy configuration to route all app traffic through Burp reliably. This experience taught me that troubleshooting is often about understanding full traffic flow, not just adjusting tool settings.
+
+One area I still find challenging is implementing machine learning security tools from code. I have worked with pre-built deepfake detection datasets and models, but writing custom detection scripts or adapting ML algorithms for security use cases is still difficult for me. Advanced exploitation techniques such as bypassing modern endpoint protections are another area I want to improve in.
+
+My concrete improvement goal is to complete the TryHackMe Offensive Pentesting learning path and solve 20 active-difficulty machines independently within the next six months, by May 2027. I will measure progress by tracking my completion percentage on the learning path and counting the number of machines I can compromise without walkthrough hints.
 
 ## Career Objective
-My target role is a penetration tester, with a focus on web, mobile and cloud security. Over the next 12 months I will strengthen my Bash scripting skills, study local regulatory frameworks such as BNM RMiT, and complete the OSCP certification. After that I will build DevSecOps and cloud penetration testing experience to qualify for senior testing roles in the financial services sector.
+
+My target career role is a penetration testing engineer, specialising in web application and network security testing. My next three steps to reach this goal are structured around skill validation and practical depth. First, I will build consistent hands-on practice through TryHackMe and Hack The Box platforms to strengthen my core testing methodology. Second, I will complete the OSCP certification within 12 months to validate my offensive security skills with an industry-recognised credential. Third, I will expand my knowledge of regulatory compliance and cloud security testing to qualify for roles in the financial services sector, which is a key employer market in Malaysia.
 
 ## Contact Information
+
 - GitHub: [@XDUM-H](https://github.com/XDUM-H)
-- LinkedIn: (add your LinkedIn URL here later)
-- Email: (add your professional email here)
+- LinkedIn: [Dopamine Gnight](https://www.linkedin.com/in/dopamine-gnight-539407443/)
+- Email: 1428209845@qq.com
