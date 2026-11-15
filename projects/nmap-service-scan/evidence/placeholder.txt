@@ -1,0 +1,2 @@
+This folder contains evidence for the Nmap service scan project.
+Evidence includes: full nmap -sV scan output screenshots and port risk analysis notes.
