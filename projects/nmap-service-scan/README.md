@@ -16,13 +16,14 @@ Perform a service version scan on the Metasploitable 2 target to identify open p
 5. Recorded all scan output and analysed the four most dangerous ports.
 
 ## Results
-The scan revealed 22 open TCP ports running outdated services with multiple critical vulnerabilities. The four highest-risk findings are:
-- **Port 21 (vsftpd 2.3.4)**: Contains a well-documented backdoor that allows instant remote root access.
-- **Port 23 (Telnet)**: Transmits all login credentials in plain text, allowing password theft via traffic capture.
-- **Port 445 (Samba 3.X-4.X)**: Vulnerable to remote code execution exploits that can compromise the system without authentication.
-- **Port 1524 (root bind shell)**: A pre-configured backdoor shell that grants immediate administrator access.
+The scan revealed 22 open TCP ports running outdated services with multiple critical vulnerabilities.
 
-Full scan output and screenshots are stored in the `evidence/` folder.
+### Evidence
+Full Nmap service version scan output:
+![Nmap -sV scan result](evidence/nmap%20scan.png)
+
+The four highest-risk findings are:
+- **Port 21 (vsftpd 2.3.4)**: Contains a well
 
 ## Reflection & Improvements
 In a follow-up test I would add vulnerability script scanning with `nmap --script=vuln` to automatically detect known CVE issues. I would also export the results into a formal report format and add risk ratings for each finding.
