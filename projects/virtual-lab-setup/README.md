@@ -19,9 +19,23 @@ Build a fully isolated virtual penetration testing lab to safely practice securi
 5. Verified network isolation by testing connection to public external addresses, confirming no internet access from the lab.
 
 ## Results
-The lab was successfully built with full isolation. Both machines can communicate with each other over the host-only subnet, and cannot reach external networks or the host's local area network. This ensures all testing activities stay within the safe, controlled environment.
+The lab was successfully built with full isolation. Both machines can communicate with each other over the host-only subnet, and cannot reach external networks.
 
-Evidence: Network setting screenshots, IP configuration output, and ping test results are stored in the `evidence/` folder.
+### Evidence
+**Kali Linux IP configuration:**
+![Kali IP address](evidence/kali%20ip.png)
+
+**Metasploitable 2 IP configuration:**
+![Metasploitable IP address](evidence/meta%20ip.png)
+
+**Connectivity ping test (Kali to target):**
+![Ping test result](evidence/ping.png)
+
+**Network topology diagram:**
+![Lab topology](evidence/Topological%20diagram.png)
+
+Full network setting screenshots are stored in this `evidence/` folder.
+
 
 ## Reflection & Improvements
 If I were to rebuild this lab, I would add a second target machine and a virtual firewall to simulate a more realistic segmented network. I would also add GNS3 to practice routing-level security testing.
