@@ -20,7 +20,7 @@ The scan revealed 22 open TCP ports running outdated services with multiple crit
 
 ### Evidence
 Full Nmap service version scan output:
-![Nmap -sV scan result](evidence/nmap%20scan.png)
+![Nmap -sV scan result](evidence/nmap_scan.png)
 
 The four highest-risk findings are:
 - **Port 21 (vsftpd 2.3.4)**: Contains a well
